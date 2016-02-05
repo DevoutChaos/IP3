@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/TestScenes/Liam/BasicTest1_Movement.unity
+  isLoaded: 1
+  isActive: 1
