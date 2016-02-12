@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour
@@ -6,11 +7,15 @@ public class PlayerController : MonoBehaviour
 
     //General Declarations
     public float speed = 1f;
+    public Text scoreText;
+
+    private int score;
 
     // Use this for initialization
     void Start()
     {
-
+        score = 0;
+        SetScoreText();
     }
 
     // Update is called once per frame
@@ -46,4 +51,20 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Food"))
+        {
+            other.gameObject.SetActive(false);
+            score++;
+            SetScoreText();
+        }
+    }
+
+    void SetScoreText()
+    {
+        scoreText.text = "Score: " + score.ToString();
+    }
+}
 }
