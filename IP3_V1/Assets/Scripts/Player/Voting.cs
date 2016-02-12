@@ -12,15 +12,22 @@ public class Voting : MonoBehaviour
     int P3Vote;
     int P4Vote;
 
-    bool p1Voted;
-    bool p2Voted;
-    bool p3Voted;
-    bool p4Voted;
+    public bool p1Voted;
+    public bool p2Voted;
+    public bool p3Voted;
+    public bool p4Voted;
 
     // Use this for initialization
     void Start()
     {
+        p1Voted = false;
+        p2Voted = false;
+        p3Voted = false;
+        p4Voted = false;
 
+        //Check apparent number of players.
+        noOfPlayers = Input.GetJoystickNames().Length;
+        Debug.Log("Players present: " + noOfPlayers);
     }
 
     // Update is called once per frame
@@ -37,36 +44,60 @@ public class Voting : MonoBehaviour
         }
         else if (IsVoting)
         {
-            //Check apparent number of players.
-            noOfPlayers = Input.GetJoystickNames().Length;
-            Debug.Log("Players present: " + noOfPlayers);
-
             //A = 0, B = 1, X = 2, Y = 3
             //A = P1, B = P2, X = P3, Y = P4
-
-            //Handle Player 1 Input
-            if (!p1Voted)
+            if (noOfPlayers > 3)
             {
-                if (Input.GetButtonUp("P1voteP1"))
+                if (!p4Voted)
                 {
-                    P1Vote++;
-                    p1Voted = true;
+                    if (Input.GetButtonUp("P4voteP1"))
+                    {
+                        P1Vote++;
+                        p4Voted = true;
+                    }
+                    if (Input.GetButtonUp("P4voteP2"))
+                    {
+                        P2Vote++;
+                        p4Voted = true;
+                    }
+                    if (Input.GetButtonUp("P4voteP3"))
+                    {
+                        P3Vote++;
+                        p4Voted = true;
+                    }
+                    if (Input.GetButtonUp("P4voteP4"))
+                    {
+                        P4Vote++;
+                        p4Voted = true;
+                    }
                 }
-                if (Input.GetButtonUp("P1voteP2") && noOfPlayers > 1)
+            }
+            if (noOfPlayers > 2)
+            {
+                if (!p3Voted)
                 {
-                    P2Vote++;
-                    p1Voted = true;
+                    if (Input.GetButtonUp("P3voteP1"))
+                    {
+                        P1Vote++;
+                        p3Voted = true;
+                    }
+                    if (Input.GetButtonUp("P3voteP2"))
+                    {
+                        P2Vote++;
+                        p3Voted = true;
+                    }
+                    if (Input.GetButtonUp("P3voteP3"))
+                    {
+                        P3Vote++;
+                        p3Voted = true;
+                    }
+                    if (Input.GetButtonUp("P3voteP4") && noOfPlayers > 3)
+                    {
+                        P4Vote++;
+                        p3Voted = true;
+                    }
                 }
-                if (Input.GetButtonUp("P1voteP3") && noOfPlayers > 2)
-                {
-                    P3Vote++;
-                    p1Voted = true;
-                }
-                if (Input.GetButtonUp("P1voteP4") && noOfPlayers > 3)
-                {
-                    P4Vote++;
-                    p1Voted = true;
-                }
+
             }
             if (noOfPlayers > 1)
             {
@@ -93,65 +124,37 @@ public class Voting : MonoBehaviour
                         p2Voted = true;
                     }
                 }
-                if (noOfPlayers > 2)
+            }
+            if (!p1Voted)
+            {
+                if (Input.GetButtonUp("P1voteP1"))
                 {
-                    if (!p3Voted)
-                    {
-                        if (Input.GetButtonUp("P3voteP1"))
-                        {
-                            P1Vote++;
-                            p3Voted = true;
-                        }
-                        if (Input.GetButtonUp("P3voteP2"))
-                        {
-                            P2Vote++;
-                            p3Voted = true;
-                        }
-                        if (Input.GetButtonUp("P3voteP3"))
-                        {
-                            P3Vote++;
-                            p3Voted = true;
-                        }
-                        if (Input.GetButtonUp("P3voteP4") && noOfPlayers > 3)
-                        {
-                            P4Vote++;
-                            p3Voted = true;
-                        }
-                    }
-                    if (noOfPlayers > 3)
-                    {
-                        if (!p4Voted)
-                        {
-                            if (Input.GetButtonUp("P4voteP1"))
-                            {
-                                P1Vote++;
-                                p4Voted = true;
-                            }
-                            if (Input.GetButtonUp("P4voteP2"))
-                            {
-                                P2Vote++;
-                                p4Voted = true;
-                            }
-                            if (Input.GetButtonUp("P4voteP3"))
-                            {
-                                P3Vote++;
-                                p4Voted = true;
-                            }
-                            if (Input.GetButtonUp("P4voteP4"))
-                            {
-                                P4Vote++;
-                                p4Voted = true;
-                            }
-                        }
-                    }
+                    P1Vote++;
+                    p1Voted = true;
+                }
+                if (Input.GetButtonUp("P1voteP2") && noOfPlayers > 1)
+                {
+                    P2Vote++;
+                    p1Voted = true;
+                }
+                if (Input.GetButtonUp("P1voteP3") && noOfPlayers > 2)
+                {
+                    P3Vote++;
+                    p1Voted = true;
+                }
+                if (Input.GetButtonUp("P1voteP4") && noOfPlayers > 3)
+                {
+                    P4Vote++;
+                    p1Voted = true;
                 }
             }
+
             switch (noOfPlayers)
             {
                 case 1:
                     if (p1Voted)
                     {
-                        Debug.Log("Player 1 voted");
+                        Debug.Log("Player 1 voted _ Case 1");
                     }
                     break;
 
@@ -160,15 +163,15 @@ public class Voting : MonoBehaviour
                     {
                         if (P1Vote > P2Vote)
                         {
-                            Debug.Log("Player 1 voted");
+                            Debug.Log("Player 1 voted _ Case 2");
                         }
                         else if (P2Vote > P1Vote)
                         {
-                            Debug.Log("Player 2 voted");
+                            Debug.Log("Player 2 voted _ Case 2");
                         }
                         else
                         {
-                            Debug.Log("Tie for Players 1 and 2");
+                            Debug.Log("Tie for Players 1 and 2 _ Case 2");
                         }
                     }
                     break;
