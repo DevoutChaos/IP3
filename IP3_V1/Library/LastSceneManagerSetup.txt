@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TestScenes/Liam/BasicTest1_Movement.unity
+- path: Assets/TestScenes/Liam/BasicTest1_Voting.unity
   isLoaded: 1
   isActive: 1
