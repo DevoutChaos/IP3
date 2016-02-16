@@ -179,24 +179,29 @@ public class Voting : MonoBehaviour
                 case 3:
                     if (p1Voted && p2Voted && p3Voted)
                     {
-                        //***KNOWN ISSUE - IN EVENT OF A DRAW, WILL ALWAYS RETURN PLAYER WHO IS LOWEST NUMERICALLY. ***//
-                        //***COULD FIX BY USING [&& votedC3 !=] ***// 
                         int votedC3 = Mathf.Max(P1Vote, P2Vote, P3Vote);
-                        if (votedC3 == P1Vote)
+                        if (votedC3 == P1Vote && votedC3 != P2Vote && votedC3 != P3Vote)
                         {
                             Debug.Log("Player 1 voted");
                         }
-                        else if (votedC3 == P2Vote)
+                        else if (votedC3 == P2Vote && votedC3 != P1Vote && votedC3 != P3Vote)
                         {
                             Debug.Log("Player 2 voted");
                         }
-                        else if (votedC3 == P3Vote)
+                        else if (votedC3 == P3Vote && votedC3 != P1Vote && votedC3 != P2Vote)
                         {
                             Debug.Log("Player 3 voted");
                         }
                         else
                         {
-                            Debug.Log("Tie");
+                            switch (votedC3)
+                            {
+                                case 1:
+                                    {
+                                        Debug.Log("Tie between P1, P2 and P3");
+                                        break;
+                                    }
+                            }
                         }
 
                     }
@@ -205,28 +210,77 @@ public class Voting : MonoBehaviour
                 case 4:
                     if (p1Voted && p2Voted && p3Voted && p4Voted)
                     {
-                        //***KNOWN ISSUE - IN EVENT OF A DRAW, WILL ALWAYS RETURN PLAYER WHO IS LOWEST NUMERICALLY. ***//
-                        //***COULD FIX BY USING [&& votedC4 !=] ***// 
                         int votedC4 = Mathf.Max(P1Vote, P2Vote, P3Vote, P4Vote);
-                        if (votedC4 == P1Vote)
+                        if (votedC4 == P1Vote && votedC4 != P2Vote && votedC4 != P3Vote && votedC4 != P4Vote)
                         {
                             Debug.Log("Player 1 voted");
                         }
-                        else if (votedC4 == P2Vote)
+                        else if (votedC4 == P2Vote && votedC4 != P1Vote && votedC4 != P3Vote && votedC4 != P4Vote)
                         {
                             Debug.Log("Player 2 voted");
                         }
-                        else if (votedC4 == P3Vote)
+                        else if (votedC4 == P3Vote && votedC4 != P1Vote && votedC4 != P2Vote && votedC4 != P4Vote)
                         {
                             Debug.Log("Player 3 voted");
                         }
-                        else if (votedC4 == P4Vote)
+                        else if (votedC4 == P4Vote && votedC4 != P1Vote && votedC4 != P2Vote && votedC4 != P3Vote)
                         {
                             Debug.Log("Player 4 voted");
                         }
                         else
                         {
-                            Debug.Log("Tie");
+                            switch(votedC4)
+                            {
+                                case 1:
+                                    {
+                                        Debug.Log("Tie between P1, P2, P3 and P4");
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        string tied1 = "";
+                                        string tied2 = "";
+                                        if (votedC4 == P1Vote)
+                                        {
+                                            tied1 = "P1";
+                                        }
+                                        if (votedC4 == P2Vote)
+                                        {
+                                            if (tied1 == "")
+                                            {
+                                                tied1 = "P2";
+                                            }
+                                            else
+                                            {
+                                                tied2 = "P2";
+                                            }
+                                        }
+                                        if (votedC4 == P3Vote)
+                                        {
+                                            if (tied1 == "")
+                                            {
+                                                tied1 = "P3";
+                                            }
+                                            else
+                                            {
+                                                tied2 = "P3";
+                                            }
+                                        }
+                                        if (votedC4 == P4Vote)
+                                        {
+                                            if (tied1 == "")
+                                            {
+                                                tied1 = "P4";
+                                            }
+                                            else
+                                            {
+                                                tied2 = "P4";
+                                            }
+                                        }
+                                        Debug.Log("Tie between " + tied1 + ", " + tied2);
+                                        break;
+                                    }
+                            }
                         }
                     }
                     break;
