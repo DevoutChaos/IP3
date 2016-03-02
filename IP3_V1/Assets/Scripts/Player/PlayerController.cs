@@ -6,6 +6,11 @@ public class PlayerController : MonoBehaviour
 
     //General Declarations
     public float speed = 1f;
+    public float angle1;
+    public GameObject followThing1;
+    public GameObject followThing2;
+    public GameObject followThing3;
+    public GameObject followThing4;
 
     // Use this for initialization
     void Start()
@@ -20,8 +25,19 @@ public class PlayerController : MonoBehaviour
         if (this.gameObject.tag == "Player1")
         {
             float horMove1 = Input.GetAxis("Horizontal_P1");
-            float verMove1 = Input.GetAxis("Vertical_P1"); 
+            float verMove1 = Input.GetAxis("Vertical_P1");
+            //Debug.DrawLine(transform.position, followThing1.transform.position, Color.red);
             GetComponent<Rigidbody>().velocity = new Vector3(horMove1 * speed, 0, verMove1 * speed);
+
+            //if (horMove1 != 0 && verMove1 != 0)
+            //{
+            //    angle1 = Mathf.Atan2(horMove1, verMove1) * Mathf.Rad2Deg;
+            //    transform.rotation = Quaternion.Euler(0, angle1, 0);
+            //    //transform.position = Vector3.MoveTowards(transform.position, followThing1.transform.position, speed);
+            //    //GetComponent<Rigidbody>().velocity = Vector3.MoveTowards(transform.position, followThing1.transform.position, speed);
+            //    //GetComponent<Rigidbody>().velocity = (transform.forward * speed);
+            //}
+            
         }
 
         if (this.gameObject.tag == "Player2")
