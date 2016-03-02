@@ -12,6 +12,7 @@ public class NoRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector3(target.position.x, target.position.y + height, target.position.z - distance);
+        transform.position = new Vector3(target.position.x + distance, 0, target.position.z + height);
+        //transform.position = new Vector3(target.position.x + distance, target.position.y + distance, target.position.z + height);
 	}
 }
