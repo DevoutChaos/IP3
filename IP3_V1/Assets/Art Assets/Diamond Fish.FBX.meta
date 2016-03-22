@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: a8056f4a6402e124a9764b2f6ddb469d
+timeCreated: 1458614215
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Diamond Bottom
+    100002: Diamond Chest
+    100004: Diamond Fin002
+    100006: Diamond Fin003
+    100008: Diamond Fin004
+    100010: Diamond Fin01
+    100012: //RootNode
+    100014: Diamond Head
+    100016: Diamond Tail
+    100018: Plane001
+    100020: Sphere001
+    100022: Sphere002
+    100024: Sphere003
+    100026: Sphere004
+    100028: Sphere005
+    100030: Sphere006
+    400000: Diamond Bottom
+    400002: Diamond Chest
+    400004: Diamond Fin002
+    400006: Diamond Fin003
+    400008: Diamond Fin004
+    400010: Diamond Fin01
+    400012: //RootNode
+    400014: Diamond Head
+    400016: Diamond Tail
+    400018: Plane001
+    400020: Sphere001
+    400022: Sphere002
+    400024: Sphere003
+    400026: Sphere004
+    400028: Sphere005
+    400030: Sphere006
+    2300000: Diamond Bottom
+    2300002: Diamond Chest
+    2300004: Diamond Fin002
+    2300006: Diamond Fin003
+    2300008: Diamond Fin004
+    2300010: Diamond Fin01
+    2300012: Diamond Head
+    2300014: Diamond Tail
+    2300016: Plane001
+    2300018: Sphere001
+    2300020: Sphere002
+    2300022: Sphere003
+    2300024: Sphere004
+    2300026: Sphere005
+    2300028: Sphere006
+    3300000: Diamond Bottom
+    3300002: Diamond Chest
+    3300004: Diamond Fin002
+    3300006: Diamond Fin003
+    3300008: Diamond Fin004
+    3300010: Diamond Fin01
+    3300012: Diamond Head
+    3300014: Diamond Tail
+    3300016: Plane001
+    3300018: Sphere001
+    3300020: Sphere002
+    3300022: Sphere003
+    3300024: Sphere004
+    3300026: Sphere005
+    3300028: Sphere006
+    4300000: Plane001
+    4300002: Diamond Head
+    4300004: Diamond Fin002
+    4300006: Diamond Fin01
+    4300008: Diamond Chest
+    4300010: Diamond Bottom
+    4300012: Diamond Fin003
+    4300014: Diamond Fin004
+    4300016: Diamond Tail
+    4300018: Sphere001
+    4300020: Sphere004
+    4300022: Sphere002
+    4300024: Sphere003
+    4300026: Sphere005
+    4300028: Sphere006
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
