@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 014b57817f48db34a9a3afb5857b3525
+timeCreated: 1458614209
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Blue_Fish_V1
+    100002: Blue_Fish_V1_Skinned
+    100004: Blue_Fish_V2
+    100006: Blue_Fish_V2_Skinned
+    100008: Bone001
+    100010: Bone002
+    100012: Bone003
+    100014: Bone004
+    100016: Bone005
+    100018: Bone006
+    100020: Bone007
+    100022: Bone008
+    100024: Bone009
+    100026: Bone010
+    100028: Bone011
+    100030: Bone012
+    100032: Bone013
+    100034: Bone014
+    100036: Bone015
+    100038: Bone016
+    100040: Bone017
+    100042: Bone018
+    100044: Bone019
+    100046: Bone020
+    100048: Bone021
+    100050: Bone022
+    100052: Bone023
+    100054: Bone024
+    100056: Bone025
+    100058: Bone026
+    100060: //RootNode
+    100062: 'Orange_Fish_V1 '
+    100064: Orange_Fish_V1_Skinned
+    100066: Orange_Fish_V2
+    100068: Orange_Fish_V2_Skinned
+    100070: PhysCamera002
+    100072: PhysCamera002.Target
+    100074: Plane001
+    100076: Plane002
+    100078: Plane003
+    100080: Plane004
+    400000: Blue_Fish_V1
+    400002: Blue_Fish_V1_Skinned
+    400004: Blue_Fish_V2
+    400006: Blue_Fish_V2_Skinned
+    400008: Bone001
+    400010: Bone002
+    400012: Bone003
+    400014: Bone004
+    400016: Bone005
+    400018: Bone006
+    400020: Bone007
+    400022: Bone008
+    400024: Bone009
+    400026: Bone010
+    400028: Bone011
+    400030: Bone012
+    400032: Bone013
+    400034: Bone014
+    400036: Bone015
+    400038: Bone016
+    400040: Bone017
+    400042: Bone018
+    400044: Bone019
+    400046: Bone020
+    400048: Bone021
+    400050: Bone022
+    400052: Bone023
+    400054: Bone024
+    400056: Bone025
+    400058: Bone026
+    400060: //RootNode
+    400062: 'Orange_Fish_V1 '
+    400064: Orange_Fish_V1_Skinned
+    400066: Orange_Fish_V2
+    400068: Orange_Fish_V2_Skinned
+    400070: PhysCamera002
+    400072: PhysCamera002.Target
+    400074: Plane001
+    400076: Plane002
+    400078: Plane003
+    400080: Plane004
+    2300000: Blue_Fish_V1
+    2300002: Blue_Fish_V2
+    2300004: 'Orange_Fish_V1 '
+    2300006: Orange_Fish_V2
+    2300008: Plane001
+    2300010: Plane002
+    2300012: Plane003
+    2300014: Plane004
+    3300000: Blue_Fish_V1
+    3300002: Blue_Fish_V2
+    3300004: 'Orange_Fish_V1 '
+    3300006: Orange_Fish_V2
+    3300008: Plane001
+    3300010: Plane002
+    3300012: Plane003
+    3300014: Plane004
+    4300000: Plane001
+    4300002: Orange_Fish_V1_Skinned
+    4300004: Plane002
+    4300006: Orange_Fish_V2_Skinned
+    4300008: Plane003
+    4300010: Plane004
+    4300012: Blue_Fish_V1_Skinned
+    4300014: Blue_Fish_V2_Skinned
+    4300016: 'Orange_Fish_V1 '
+    4300018: Orange_Fish_V2
+    4300020: Blue_Fish_V1
+    4300022: Blue_Fish_V2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Blue_Fish_V1_Skinned
+    13700002: Blue_Fish_V2_Skinned
+    13700004: Orange_Fish_V1_Skinned
+    13700006: Orange_Fish_V2_Skinned
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

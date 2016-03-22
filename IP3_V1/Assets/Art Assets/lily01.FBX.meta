@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 94848ac72fe2e9f4eb110c083cb7fe75
+timeCreated: 1458614215
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: lily_center01
+    100004: lily_leaf01
+    100006: petal01
+    100008: petal02
+    100010: petal03
+    100012: petal04
+    100014: petal05
+    100016: petal06
+    100018: petal07
+    100020: petal08
+    100022: petal09
+    100024: petal10
+    100026: petal11
+    100028: petal12
+    100030: petal13
+    100032: petal14
+    100034: petal15
+    100036: petal16
+    100038: petal17
+    100040: petal18
+    400000: //RootNode
+    400002: lily_center01
+    400004: lily_leaf01
+    400006: petal01
+    400008: petal02
+    400010: petal03
+    400012: petal04
+    400014: petal05
+    400016: petal06
+    400018: petal07
+    400020: petal08
+    400022: petal09
+    400024: petal10
+    400026: petal11
+    400028: petal12
+    400030: petal13
+    400032: petal14
+    400034: petal15
+    400036: petal16
+    400038: petal17
+    400040: petal18
+    2300000: lily_center01
+    2300002: lily_leaf01
+    2300004: petal01
+    2300006: petal02
+    2300008: petal03
+    2300010: petal04
+    2300012: petal05
+    2300014: petal06
+    2300016: petal07
+    2300018: petal08
+    2300020: petal09
+    2300022: petal10
+    2300024: petal11
+    2300026: petal12
+    2300028: petal13
+    2300030: petal14
+    2300032: petal15
+    2300034: petal16
+    2300036: petal17
+    2300038: petal18
+    3300000: lily_center01
+    3300002: lily_leaf01
+    3300004: petal01
+    3300006: petal02
+    3300008: petal03
+    3300010: petal04
+    3300012: petal05
+    3300014: petal06
+    3300016: petal07
+    3300018: petal08
+    3300020: petal09
+    3300022: petal10
+    3300024: petal11
+    3300026: petal12
+    3300028: petal13
+    3300030: petal14
+    3300032: petal15
+    3300034: petal16
+    3300036: petal17
+    3300038: petal18
+    4300000: lily_leaf01
+    4300002: petal01
+    4300004: lily_center01
+    4300006: petal02
+    4300008: petal03
+    4300010: petal04
+    4300012: petal05
+    4300014: petal06
+    4300016: petal07
+    4300018: petal08
+    4300020: petal09
+    4300022: petal10
+    4300024: petal11
+    4300026: petal12
+    4300028: petal13
+    4300030: petal14
+    4300032: petal15
+    4300034: petal16
+    4300036: petal17
+    4300038: petal18
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
