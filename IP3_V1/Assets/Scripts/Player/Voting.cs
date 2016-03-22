@@ -27,9 +27,16 @@ public class Voting : MonoBehaviour
     public GameObject Player3;
     public GameObject Player4;
 
+    //public GameObject gameData;
+    public static GameData gameData;
+
     // Use this for initialization
     void Start()
     {
+        if (gameData == null)
+        {
+            gameData = GameObject.FindGameObjectWithTag("GameData").GetComponent<GameData>();
+        }
         p1Voted = false;
         p2Voted = false;
         p3Voted = false;
@@ -427,43 +434,43 @@ public class Voting : MonoBehaviour
     }
     public void PlayerChecks()
     {
-        if (!P1Enabled)
+        if (!P1Enabled || gameData.P1Joined == false)
         {
             Player1.gameObject.GetComponent<Collider>().enabled = false;
             Player1.gameObject.GetComponent<Renderer>().enabled = false;
         }
-        if (!P2Enabled)
+        if (!P2Enabled || gameData.P2Joined == false)
         {
             Player2.gameObject.GetComponent<Collider>().enabled = false;
             Player2.gameObject.GetComponent<Renderer>().enabled = false;
         }
-        if (!P3Enabled)
+        if (!P3Enabled || gameData.P3Joined == false)
         {
             Player3.gameObject.GetComponent<Collider>().enabled = false;
             Player3.gameObject.GetComponent<Renderer>().enabled = false;
         }
-        if (!P4Enabled)
+        if (!P4Enabled || gameData.P4Joined == false)
         {
             Player4.gameObject.GetComponent<Collider>().enabled = false;
             Player4.gameObject.GetComponent<Renderer>().enabled = false;
         }
 
-        if (P1Enabled)
+        if (P1Enabled && gameData.P1Joined)
         {
             Player1.gameObject.GetComponent<Collider>().enabled = true;
             Player1.gameObject.GetComponent<Renderer>().enabled = true;
         }
-        if (P2Enabled)
+        if (P2Enabled && gameData.P2Joined)
         {
             Player2.gameObject.GetComponent<Collider>().enabled = true;
             Player2.gameObject.GetComponent<Renderer>().enabled = true;
         }
-        if (P3Enabled)
+        if (P3Enabled && gameData.P3Joined)
         {
             Player3.gameObject.GetComponent<Collider>().enabled = true;
             Player3.gameObject.GetComponent<Renderer>().enabled = true;
         }
-        if (P4Enabled)
+        if (P4Enabled && gameData.P4Joined)
         {
             Player4.gameObject.GetComponent<Collider>().enabled = true;
             Player4.gameObject.GetComponent<Renderer>().enabled = true;

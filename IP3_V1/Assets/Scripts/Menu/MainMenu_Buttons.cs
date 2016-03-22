@@ -3,9 +3,14 @@ using System.Collections;
 
 public class MainMenu_Buttons : MonoBehaviour {
 
+    public static GameData gameData;
+
 	// Use this for initialization
 	void Start () {
-	
+        if (gameData == null)
+        {
+            gameData = GameObject.FindGameObjectWithTag("GameData").GetComponent<GameData>();
+        }
 	}
 	
 	// Update is called once per frame
@@ -15,6 +20,9 @@ public class MainMenu_Buttons : MonoBehaviour {
 
     public void toNG()
     {
-        Application.LoadLevel("BasicTest1_Voting");
+        if (gameData.players > 0)
+        {
+            Application.LoadLevel("BasicTest1_Voting");   
+        }
     }
 }
