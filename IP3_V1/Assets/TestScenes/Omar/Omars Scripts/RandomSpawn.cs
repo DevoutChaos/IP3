@@ -9,7 +9,7 @@ public class RandomSpawn : MonoBehaviour {
     //public GameObject startFood;
 	// Use this for initialization
 	void Start () {
-        //Instantiate(startFood, new Vector3(5, 0.5f, 4), Quaternion.identity);
+        //Instantiate(startFood, new Vector3(5, 2.32f, 4), Quaternion.identity);
     }
 	
 	// Update is called once per frame
@@ -20,15 +20,15 @@ public class RandomSpawn : MonoBehaviour {
 
         if (amount != 3)
         {
-            InvokeRepeating("spawnFood", 1, 10f);
+            InvokeRepeating("spawnFood", 1f, 10f);
         }
 	}
 
     void spawnFood()
     {
-        spawnPoint.x = Random.Range (-20, 20);
-        spawnPoint.y = 0.5f;
-        spawnPoint.z = Random.Range (-20, 20);
+        spawnPoint.x = Random.Range (480, 520);
+        spawnPoint.y = 2.32f;
+        spawnPoint.z = Random.Range (480, 520);
 
         Instantiate(food[UnityEngine.Random.Range(0, food.Length)], spawnPoint, Quaternion.identity);
         CancelInvoke();
