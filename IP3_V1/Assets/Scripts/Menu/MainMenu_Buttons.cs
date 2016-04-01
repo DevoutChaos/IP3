@@ -22,7 +22,7 @@ public class MainMenu_Buttons : MonoBehaviour {
     {
         if (gameData.players > 0)
         {
-            Application.LoadLevel("BasicTest1_Voting");   
+            Application.LoadLevel("Test Scne");   
         }
     }
 }
