@@ -432,46 +432,56 @@ public class Voting : MonoBehaviour
             }
         }
     }
+
+
     public void PlayerChecks()
     {
         if (!P1Enabled || gameData.P1Joined == false)
         {
+            Player1.SetActive(false);
             Player1.gameObject.GetComponent<Collider>().enabled = false;
             Player1.gameObject.GetComponent<Renderer>().enabled = false;
         }
         if (!P2Enabled || gameData.P2Joined == false)
         {
+            Player2.SetActive(false);
             Player2.gameObject.GetComponent<Collider>().enabled = false;
             Player2.gameObject.GetComponent<Renderer>().enabled = false;
         }
         if (!P3Enabled || gameData.P3Joined == false)
         {
+            Player3.SetActive(false);
             Player3.gameObject.GetComponent<Collider>().enabled = false;
             Player3.gameObject.GetComponent<Renderer>().enabled = false;
         }
         if (!P4Enabled || gameData.P4Joined == false)
         {
+            Player4.SetActive(false);
             Player4.gameObject.GetComponent<Collider>().enabled = false;
             Player4.gameObject.GetComponent<Renderer>().enabled = false;
         }
 
         if (P1Enabled && gameData.P1Joined)
         {
+            Player1.SetActive(true);
             Player1.gameObject.GetComponent<Collider>().enabled = true;
             Player1.gameObject.GetComponent<Renderer>().enabled = true;
         }
         if (P2Enabled && gameData.P2Joined)
         {
+            Player2.SetActive(true);
             Player2.gameObject.GetComponent<Collider>().enabled = true;
             Player2.gameObject.GetComponent<Renderer>().enabled = true;
         }
         if (P3Enabled && gameData.P3Joined)
         {
+            Player3.SetActive(true);
             Player3.gameObject.GetComponent<Collider>().enabled = true;
             Player3.gameObject.GetComponent<Renderer>().enabled = true;
         }
         if (P4Enabled && gameData.P4Joined)
         {
+            Player4.SetActive(true);
             Player4.gameObject.GetComponent<Collider>().enabled = true;
             Player4.gameObject.GetComponent<Renderer>().enabled = true;
         }
