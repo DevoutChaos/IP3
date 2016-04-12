@@ -25,11 +25,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+// Update is called once per frame
+void FixedUpdate()
     {
 
         if (this.gameObject.tag == "Player1" && voting.P1Enabled)
