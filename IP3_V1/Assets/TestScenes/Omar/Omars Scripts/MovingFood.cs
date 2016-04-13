@@ -14,12 +14,12 @@ public class MovingFood : MonoBehaviour
         else
             transform.Translate(-Vector2.right * speed * Time.deltaTime);
 
-        if (transform.position.x >= 4.0f)
+        if (transform.position.x >= 506.0f)
         {
             dirRight = false;
         }
 
-        if (transform.position.x <= -4)
+        if (transform.position.x <= 494.0f)
         {
             dirRight = true;
         }

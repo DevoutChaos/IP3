@@ -18,7 +18,7 @@ public class RandomSpawn : MonoBehaviour {
         food = GameObject.FindGameObjectsWithTag("Food");
         amount = food.Length;
 
-        if (amount != 3)
+        if (amount != 5)
         {
             InvokeRepeating("spawnFood", 1f, 10f);
         }
@@ -26,9 +26,9 @@ public class RandomSpawn : MonoBehaviour {
 
     void spawnFood()
     {
-        spawnPoint.x = Random.Range (480, 520);
+        spawnPoint.x = Random.Range (488, 512);
         spawnPoint.y = 2.32f;
-        spawnPoint.z = Random.Range (480, 520);
+        spawnPoint.z = Random.Range (488, 512);
 
         Instantiate(food[UnityEngine.Random.Range(0, food.Length)], spawnPoint, Quaternion.identity);
         CancelInvoke();
